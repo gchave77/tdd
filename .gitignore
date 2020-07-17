@@ -2,5 +2,4 @@
 *.jar
 *.war
 *.class
-bin/target
 tdd.iml
