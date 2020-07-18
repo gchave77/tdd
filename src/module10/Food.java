@@ -1,6 +1,6 @@
 package module10;
 
-abstract class Food extends Goods
+public abstract class Food extends Goods
 {
     public Food(double tax)
     {

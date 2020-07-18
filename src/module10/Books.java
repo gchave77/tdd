@@ -1,6 +1,6 @@
 package module10;
 
-abstract class Books extends Goods
+public abstract class Books extends Goods
 {
     public Books(double tax)
     {
