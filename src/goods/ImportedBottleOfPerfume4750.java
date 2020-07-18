@@ -1,4 +1,4 @@
-package Goods;
+package goods;
 
 import module10.Goods;
 import module10.Imports;
