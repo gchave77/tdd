@@ -4,13 +4,20 @@ import module10.MedicalProducts;
 
 public class PacketOfHeadachePills975 extends MedicalProducts
 {
-    String name = "Packet Of Headache Pills $9.75";
-    double price = 9.75;
+    public static String name = "$9.75 Packet Of Headache Pills";
+    public static double price = 9.75;
 
     public PacketOfHeadachePills975(double tax, String name, double price)
     {
         super(tax);
-        this.name = name;
-        this.price = price;
     }
+
+    public static double getPurchase(double tax, double price)
+    {
+        double totalItemTax;
+
+        totalItemTax = tax * price;
+        return totalItemTax;
+    }
+
 }

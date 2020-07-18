@@ -5,20 +5,20 @@ import module10.Imports;
 
 public class ImportedBottleOfPerfume2799 extends Goods implements Imports
 {
-    String name = "Imported Bottle Of Perfume $27.99";
-    double price = 27.99;
-    private final double importTax;
+    public static String name = "$27.99 Imported Bottle Of Perfume";
+    public static double price = 27.99;
 
-    public ImportedBottleOfPerfume2799(double tax, String name, double price, double importTax)
+    public ImportedBottleOfPerfume2799(double tax, String name, double price)
     {
         super(tax);
-        this.name = name;
-        this.price = price;
-        this.importTax = importTax;
     }
 
-    public double getImportTax()
+    public static double getPurchase(double tax, double price)
     {
-        return importTax;
+        double totalItemTax;
+
+        totalItemTax = (tax + Imports.importTax) * price;
+        return totalItemTax;
     }
+
 }

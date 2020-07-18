@@ -5,20 +5,20 @@ import module10.Imports;
 
 public class ImportedBoxOfChocolates1000 extends Food implements Imports
 {
-    String name = "Imported Box Of Chocolates $10.00";
-    double price = 10.00;
-    private final double importTax;
+    public static String name = "$10 Imported Box Of Chocolates";
+    public static double price = 10.00;
 
-    public ImportedBoxOfChocolates1000(double tax, String name, double price, double importTax)
+    public ImportedBoxOfChocolates1000(double tax, String name, double price)
     {
         super(tax);
-        this.name = name;
-        this.price = price;
-        this.importTax = importTax;
     }
 
-    public double getImportTax()
+    public static double getPurchase(double tax, double price)
     {
-        return importTax;
+        double totalItemTax;
+
+        totalItemTax = (tax + Imports.importTax) * price;
+        return totalItemTax;
     }
+
 }
