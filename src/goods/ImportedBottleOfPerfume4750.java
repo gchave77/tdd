@@ -18,6 +18,6 @@ public class ImportedBottleOfPerfume4750 extends Goods implements Imports
         double totalItemTax;
 
         totalItemTax = (tax + Imports.importTax) * price;
-        return totalItemTax;
+        return (int) Math.ceil((float) totalItemTax / 100);
     }
 }

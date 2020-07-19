@@ -39,6 +39,25 @@ public class App
         System.out.println("Grand Total: " + (outputTax2 + outputPrice2));
         System.out.println(" ");
 
+        // Input/Output 3
+        System.out.println("Output 3");
+        double purchaseTax3a = ImportedBottleOfPerfume2799.getPurchase(ImportedBottleOfPerfume2799.tax, ImportedBottleOfPerfume2799.price);
+        System.out.println(ImportedBottleOfPerfume2799.name + ": " + ImportedBottleOfPerfume2799.price + " tax: " + purchaseTax3a);
+
+        double purchaseTax3b = BottleOfPerfume1899.getPurchase(BottleOfPerfume1899.tax, BottleOfPerfume1899.price);
+        System.out.println(BottleOfPerfume1899.name + ": " + BottleOfPerfume1899.price + " tax: " + purchaseTax3b);
+
+        double purchaseTax3c = PacketOfHeadachePills975.getPurchase(PacketOfHeadachePills975.tax, PacketOfHeadachePills975.price);
+        System.out.println(PacketOfHeadachePills975.name + ": " + PacketOfHeadachePills975.price + " tax: " + purchaseTax3c);
+
+        double purchaseTax3d = BoxOfImportedChocolates1125.getPurchase(BoxOfImportedChocolates1125.tax, BoxOfImportedChocolates1125.price);
+        System.out.println(BoxOfImportedChocolates1125.name + ": " + BoxOfImportedChocolates1125.price + " tax: " + purchaseTax3d);
+
+        double outputTax3 = purchaseTax3a + purchaseTax3b + purchaseTax3c + purchaseTax3d;
+        double outputPrice3 = ImportedBottleOfPerfume2799.price + BottleOfPerfume1899.price + PacketOfHeadachePills975.price + BoxOfImportedChocolates1125.price;
+
+        System.out.println("Total Sales Tax: " + outputTax3);
+        System.out.println("Grand Total: " + (outputTax3 + outputPrice3));
 
     }
 }
