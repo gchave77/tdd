@@ -19,7 +19,7 @@ public class Purchases
         System.out.println(MusicCD1499.name + ": " + MusicCD1499.price + " tax: " + purchaseTax1b);
 
         double purchaseTax1c = Food.calcTax(ChocolateBar085.tax, ChocolateBar085.price, ChocolateBar085.isImport);
-        System.out.println(MusicCD1499.name + ": " + ChocolateBar085.price + " tax: " + purchaseTax1c);
+        System.out.println(ChocolateBar085.name + ": " + ChocolateBar085.price + " tax: " + purchaseTax1c);
 
         double outputTax1 = (purchaseTax1a + purchaseTax1b + purchaseTax1c);
         double outputPrice1 = Book1249.price + MusicCD1499.price + ChocolateBar085.price;
