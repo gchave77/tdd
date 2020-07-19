@@ -2,7 +2,7 @@ package module10;
 
 public class Goods
 {
-    public static double tax = 0.1;
+    public static double tax = 0.1d;
 
     public Goods(double tax)
     {

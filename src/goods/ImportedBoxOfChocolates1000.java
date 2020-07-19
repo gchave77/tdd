@@ -6,7 +6,7 @@ import module10.Imports;
 public class ImportedBoxOfChocolates1000 extends Food implements Imports
 {
     public static String name = "$10 Imported Box Of Chocolates";
-    public static double price = 10.00;
+    public static double price = 10.00d;
 
     public ImportedBoxOfChocolates1000(double tax, String name, double price)
     {
@@ -17,8 +17,8 @@ public class ImportedBoxOfChocolates1000 extends Food implements Imports
     {
         double totalItemTax;
 
-        totalItemTax = (tax + Imports.importTax) * price;
-        return totalItemTax;
+        totalItemTax = (tax + Imports.IMPORT_TAX) * price;
+        return Math.round(totalItemTax * 20.0) / 20.0;
     }
 
 }

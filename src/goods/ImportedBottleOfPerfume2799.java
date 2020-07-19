@@ -6,7 +6,7 @@ import module10.Imports;
 public class ImportedBottleOfPerfume2799 extends Goods implements Imports
 {
     public static String name = "$27.99 Imported Bottle Of Perfume";
-    public static double price = 27.99;
+    public static double price = 27.99d;
 
     public ImportedBottleOfPerfume2799(double tax, String name, double price)
     {
@@ -17,8 +17,8 @@ public class ImportedBottleOfPerfume2799 extends Goods implements Imports
     {
         double totalItemTax;
 
-        totalItemTax = (tax + Imports.importTax) * price;
-        return totalItemTax;
+        totalItemTax = (tax + Imports.IMPORT_TAX) * price;
+        return Math.round(totalItemTax * 20.0) / 20.0;
     }
 
 }

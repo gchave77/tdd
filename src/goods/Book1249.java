@@ -5,7 +5,7 @@ import module10.Books;
 public class Book1249 extends Books
 {
     public static String name = "Non Imported Book";
-    public static double price = 12.49;
+    public static double price = 12.49d;
 
     public Book1249(double tax, String name, double price)
     {
@@ -17,6 +17,6 @@ public class Book1249 extends Books
         double totalItemTax;
 
         totalItemTax = tax * price;
-        return totalItemTax;
+        return Math.round(totalItemTax * 20.0) / 20.0;
     }
 }

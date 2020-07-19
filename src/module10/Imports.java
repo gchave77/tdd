@@ -2,6 +2,6 @@ package module10;
 
 public interface Imports
 {
-    double importTax = 0.05;
+    double IMPORT_TAX = 0.05d;
 
 }

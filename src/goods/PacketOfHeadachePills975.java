@@ -5,7 +5,7 @@ import module10.MedicalProducts;
 public class PacketOfHeadachePills975 extends MedicalProducts
 {
     public static String name = "$9.75 Packet Of Headache Pills";
-    public static double price = 9.75;
+    public static double price = 9.75d;
 
     public PacketOfHeadachePills975(double tax, String name, double price)
     {
@@ -17,7 +17,7 @@ public class PacketOfHeadachePills975 extends MedicalProducts
         double totalItemTax;
 
         totalItemTax = tax * price;
-        return totalItemTax;
+        return Math.round(totalItemTax * 20.0) / 20.0;
     }
 
 }

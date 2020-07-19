@@ -2,10 +2,14 @@ package module10;
 
 import goods.*;
 
+import java.text.DecimalFormat;
+
 public class App
 {
     public static void main(String[] args)
     {
+        DecimalFormat money = new DecimalFormat("#0.00");
+
         // Input/Output 1
         System.out.println("Output 1");
         double purchaseTax1a = Book1249.getPurchase(Book1249.tax, Book1249.price);
@@ -17,11 +21,12 @@ public class App
         double purchaseTax1c = ChocolateBar085.getPurchase(ChocolateBar085.tax, ChocolateBar085.price);
         System.out.println(MusicCD1499.name + ": " + ChocolateBar085.price + " tax: " + purchaseTax1c);
 
-        double outputTax1 = purchaseTax1a + purchaseTax1b + purchaseTax1c;
+        double outputTax1 = (purchaseTax1a + purchaseTax1b + purchaseTax1c);
         double outputPrice1 = Book1249.price + MusicCD1499.price + ChocolateBar085.price;
 
-        System.out.println("Total Sales Tax: " + outputTax1);
-        System.out.println("Grand Total: " + (outputTax1 + outputPrice1));
+
+        System.out.println("Total Sales Tax: " + money.format(outputTax1));
+        System.out.println("Grand Total: " + money.format(outputTax1 + outputPrice1));
         System.out.println(" ");
 
         // Input/Output 2
@@ -35,8 +40,8 @@ public class App
         double outputTax2 = purchaseTax2a + purchaseTax2b;
         double outputPrice2 = ImportedBoxOfChocolates1000.price + ImportedBottleOfPerfume4750.price;
 
-        System.out.println("Total Sales Tax: " + outputTax2);
-        System.out.println("Grand Total: " + (outputTax2 + outputPrice2));
+        System.out.println("Total Sales Tax: " + money.format(outputTax2));
+        System.out.println("Grand Total: " + money.format(outputTax2 + outputPrice2));
         System.out.println(" ");
 
         // Input/Output 3
@@ -56,8 +61,8 @@ public class App
         double outputTax3 = purchaseTax3a + purchaseTax3b + purchaseTax3c + purchaseTax3d;
         double outputPrice3 = ImportedBottleOfPerfume2799.price + BottleOfPerfume1899.price + PacketOfHeadachePills975.price + BoxOfImportedChocolates1125.price;
 
-        System.out.println("Total Sales Tax: " + outputTax3);
-        System.out.println("Grand Total: " + (outputTax3 + outputPrice3));
+        System.out.println("Total Sales Tax: " + money.format(outputTax3));
+        System.out.println("Grand Total: " + money.format(outputTax3 + outputPrice3));
 
     }
 }

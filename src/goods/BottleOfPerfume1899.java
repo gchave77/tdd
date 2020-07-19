@@ -5,7 +5,7 @@ import module10.Goods;
 public class BottleOfPerfume1899 extends Goods
 {
     public static String name = "$18.99 Bottle Of Perfume";
-    public static double price = 18.99;
+    public static double price = 18.99d;
 
     public BottleOfPerfume1899(double tax, String name, double price)
     {
@@ -17,6 +17,6 @@ public class BottleOfPerfume1899 extends Goods
         double totalItemTax;
 
         totalItemTax = tax * price;
-        return totalItemTax;
+        return Math.round(totalItemTax * 20.0) / 20.0;
     }
 }
