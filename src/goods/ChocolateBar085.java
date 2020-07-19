@@ -6,17 +6,11 @@ public class ChocolateBar085 extends Food
 {
     public static String name = "Non Imported Chocolate Bar";
     public static double price = 0.85d;
+    public static boolean isImport = false;
 
-    public ChocolateBar085(double tax, String name, double price)
+    public ChocolateBar085(double tax, String name, double price, boolean isImport)
     {
         super(tax);
     }
 
-    public static double getPurchase(double tax, double price)
-    {
-        double totalItemTax;
-
-        totalItemTax = tax * price;
-        return Math.round(totalItemTax * 20.0) / 20.0;
-    }
 }

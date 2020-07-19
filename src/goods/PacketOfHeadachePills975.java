@@ -6,18 +6,11 @@ public class PacketOfHeadachePills975 extends MedicalProducts
 {
     public static String name = "$9.75 Packet Of Headache Pills";
     public static double price = 9.75d;
+    public static boolean isImport = false;
 
-    public PacketOfHeadachePills975(double tax, String name, double price)
+    public PacketOfHeadachePills975(double tax, String name, double price, boolean isImport)
     {
         super(tax);
-    }
-
-    public static double getPurchase(double tax, double price)
-    {
-        double totalItemTax;
-
-        totalItemTax = tax * price;
-        return Math.round(totalItemTax * 20.0) / 20.0;
     }
 
 }

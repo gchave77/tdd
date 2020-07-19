@@ -7,18 +7,11 @@ public class ImportedBottleOfPerfume2799 extends Goods implements Imports
 {
     public static String name = "$27.99 Imported Bottle Of Perfume";
     public static double price = 27.99d;
+    public static boolean isImport = true;
 
-    public ImportedBottleOfPerfume2799(double tax, String name, double price)
+    public ImportedBottleOfPerfume2799(double tax, String name, double price, boolean isImport)
     {
         super(tax);
-    }
-
-    public static double getPurchase(double tax, double price)
-    {
-        double totalItemTax;
-
-        totalItemTax = (tax + Imports.IMPORT_TAX) * price;
-        return Math.round(totalItemTax * 20.0) / 20.0;
     }
 
 }

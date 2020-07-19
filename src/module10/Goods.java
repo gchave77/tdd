@@ -6,7 +6,6 @@ public class Goods
 
     public Goods(double tax)
     {
-        this.tax = tax;
     }
 
     public double getTax()
@@ -14,8 +13,18 @@ public class Goods
         return tax;
     }
 
-    public void setTax(double tax)
+    public void setTax(double tax) { }
+
+    public static double calcTax(double tax, double price, boolean isImport)
     {
-        this.tax = tax;
+        double totalItemTax;
+
+        if (isImport) {
+            totalItemTax = (tax + Imports.IMPORT_TAX) * price;
+        } else {
+            totalItemTax = tax * price;
+        }
+        return Math.round(totalItemTax * 20.0) / 20.0;
     }
+
 }

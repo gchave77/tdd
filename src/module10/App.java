@@ -12,13 +12,13 @@ public class App
 
         // Input/Output 1
         System.out.println("Output 1");
-        double purchaseTax1a = Book1249.getPurchase(Book1249.tax, Book1249.price);
+        double purchaseTax1a = Books.calcTax(Books.tax, Book1249.price, Book1249.isImport);
         System.out.println(Book1249.name + ": " + Book1249.price + " tax: " + purchaseTax1a);
 
-        double purchaseTax1b = MusicCD1499.getPurchase(MusicCD1499.tax, MusicCD1499.price);
+        double purchaseTax1b = Goods.calcTax(MusicCD1499.tax, MusicCD1499.price, MusicCD1499.isImport);
         System.out.println(MusicCD1499.name + ": " + MusicCD1499.price + " tax: " + purchaseTax1b);
 
-        double purchaseTax1c = ChocolateBar085.getPurchase(ChocolateBar085.tax, ChocolateBar085.price);
+        double purchaseTax1c = Food.calcTax(ChocolateBar085.tax, ChocolateBar085.price, ChocolateBar085.isImport);
         System.out.println(MusicCD1499.name + ": " + ChocolateBar085.price + " tax: " + purchaseTax1c);
 
         double outputTax1 = (purchaseTax1a + purchaseTax1b + purchaseTax1c);
@@ -31,10 +31,10 @@ public class App
 
         // Input/Output 2
         System.out.println("Output 2");
-        double purchaseTax2a = ImportedBoxOfChocolates1000.getPurchase(ImportedBoxOfChocolates1000.tax, ImportedBoxOfChocolates1000.price);
+        double purchaseTax2a = Food.calcTax(ImportedBoxOfChocolates1000.tax, ImportedBoxOfChocolates1000.price, ImportedBoxOfChocolates1000.isImport);
         System.out.println(ImportedBoxOfChocolates1000.name + ": " + ImportedBoxOfChocolates1000.price + " tax: " + purchaseTax2a);
 
-        double purchaseTax2b = ImportedBottleOfPerfume4750.getPurchase(ImportedBottleOfPerfume4750.tax, ImportedBottleOfPerfume4750.price);
+        double purchaseTax2b = Goods.calcTax(ImportedBottleOfPerfume4750.tax, ImportedBottleOfPerfume4750.price, ImportedBottleOfPerfume4750.isImport);
         System.out.println(ImportedBottleOfPerfume4750.name + ": " + ImportedBottleOfPerfume4750.price + " tax: " + purchaseTax2b);
 
         double outputTax2 = purchaseTax2a + purchaseTax2b;
@@ -46,16 +46,16 @@ public class App
 
         // Input/Output 3
         System.out.println("Output 3");
-        double purchaseTax3a = ImportedBottleOfPerfume2799.getPurchase(ImportedBottleOfPerfume2799.tax, ImportedBottleOfPerfume2799.price);
+        double purchaseTax3a = Goods.calcTax(ImportedBottleOfPerfume2799.tax, ImportedBottleOfPerfume2799.price, ImportedBottleOfPerfume2799.isImport);
         System.out.println(ImportedBottleOfPerfume2799.name + ": " + ImportedBottleOfPerfume2799.price + " tax: " + purchaseTax3a);
 
-        double purchaseTax3b = BottleOfPerfume1899.getPurchase(BottleOfPerfume1899.tax, BottleOfPerfume1899.price);
+        double purchaseTax3b = Goods.calcTax(BottleOfPerfume1899.tax, BottleOfPerfume1899.price, BottleOfPerfume1899.isImport);
         System.out.println(BottleOfPerfume1899.name + ": " + BottleOfPerfume1899.price + " tax: " + purchaseTax3b);
 
-        double purchaseTax3c = PacketOfHeadachePills975.getPurchase(PacketOfHeadachePills975.tax, PacketOfHeadachePills975.price);
+        double purchaseTax3c = MedicalProducts.calcTax(PacketOfHeadachePills975.tax, PacketOfHeadachePills975.price, PacketOfHeadachePills975.isImport);
         System.out.println(PacketOfHeadachePills975.name + ": " + PacketOfHeadachePills975.price + " tax: " + purchaseTax3c);
 
-        double purchaseTax3d = BoxOfImportedChocolates1125.getPurchase(BoxOfImportedChocolates1125.tax, BoxOfImportedChocolates1125.price);
+        double purchaseTax3d = Food.calcTax(BoxOfImportedChocolates1125.tax, BoxOfImportedChocolates1125.price, BoxOfImportedChocolates1125.isImport);
         System.out.println(BoxOfImportedChocolates1125.name + ": " + BoxOfImportedChocolates1125.price + " tax: " + purchaseTax3d);
 
         double outputTax3 = purchaseTax3a + purchaseTax3b + purchaseTax3c + purchaseTax3d;
