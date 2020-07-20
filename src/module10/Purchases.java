@@ -18,11 +18,11 @@ public class Purchases
         double purchaseTax1b = TaxCalculator.calcTax(Goods.tax, MusicCD.price, MusicCD.isImport);
         System.out.println(MusicCD.name + ": " + MusicCD.price + " plus tax: " + purchaseTax1b + " = " + money.format(MusicCD.price + purchaseTax1b));
 
-        double purchaseTax1c = TaxCalculator.calcTax(Food.tax, ChocolateBar085.price, ChocolateBar085.isImport);
-        System.out.println(ChocolateBar085.name + ": " + ChocolateBar085.price + " plus tax: " + purchaseTax1c + " = " + money.format(ChocolateBar085.price + purchaseTax1c));
+        double purchaseTax1c = TaxCalculator.calcTax(Food.tax, ChocolateBar.price, ChocolateBar.isImport);
+        System.out.println(ChocolateBar.name + ": " + ChocolateBar.price + " plus tax: " + purchaseTax1c + " = " + money.format(ChocolateBar.price + purchaseTax1c));
 
         double outputTax1 = (purchaseTax1a + purchaseTax1b + purchaseTax1c);
-        double outputPrice1 = Book.price + MusicCD.price + ChocolateBar085.price;
+        double outputPrice1 = Book.price + MusicCD.price + ChocolateBar.price;
 
         System.out.println("Total Sales Tax: " + money.format(outputTax1));
         System.out.println("Grand Total: " + money.format(outputTax1 + outputPrice1));

@@ -25,7 +25,7 @@ class PurchasesTest
     @org.junit.jupiter.api.Test
     void outputOne1c()
     {
-        double purchaseTax1c = TaxCalculator.calcTax(Food.tax, ChocolateBar085.price, ChocolateBar085.isImport);
+        double purchaseTax1c = TaxCalculator.calcTax(Food.tax, ChocolateBar.price, ChocolateBar.isImport);
         assertEquals(0.0, purchaseTax1c);
     }
 
