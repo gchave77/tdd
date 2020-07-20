@@ -16,6 +16,7 @@ public class Purchases
         System.out.println(Book.name + ": " + Book.price + " plus tax: " + purchaseTax1a + " = " + money.format(Book.price + purchaseTax1a));
 
         double purchaseTax1b = TaxCalculator.calcTax(Goods.tax, MusicCD.price, MusicCD.isImport);
+        double value = TaxCalculator.calcTax(Goods.tax, MusicCD.price, MusicCD.isImport);
         System.out.println(MusicCD.name + ": " + MusicCD.price + " plus tax: " + purchaseTax1b + " = " + money.format(MusicCD.price + purchaseTax1b));
 
         double purchaseTax1c = TaxCalculator.calcTax(Foods.tax, ChocolateBar.price, ChocolateBar.isImport);

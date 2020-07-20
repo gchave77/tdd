@@ -8,7 +8,7 @@ public class MusicCD extends Goods
     public static double price = 14.99d;
     public static boolean isImport = false;
 
-    public MusicCD(double tax, String name, double price, boolean isImport)
+    public MusicCD(double tax, double price, boolean isImport)
     {
         super(tax);
     }
