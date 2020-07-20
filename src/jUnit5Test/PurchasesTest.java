@@ -11,7 +11,7 @@ class PurchasesTest
     @org.junit.jupiter.api.Test
     void outputOne1a()
     {
-        double purchaseTax1a = TaxCalculator.calcTax(Books.tax, Book.price, false);
+        double purchaseTax1a = TaxCalculator.calcTax(Books.tax, Book.priceBook, false);
         assertEquals(0.0, purchaseTax1a);
     }
 
@@ -60,7 +60,7 @@ class PurchasesTest
     @org.junit.jupiter.api.Test
     void outputThree3c()
     {
-        double purchaseTax3c = TaxCalculator.calcTax(MedicalProducts.tax, MedicalProduct.price, false);
+        double purchaseTax3c = TaxCalculator.calcTax(MedicalProducts.tax, MedicalProduct.pricePacketOfHeadachePills, false);
         assertEquals(0.0, purchaseTax3c);
     }
 
