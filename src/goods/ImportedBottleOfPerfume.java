@@ -1,9 +1,8 @@
 package goods;
 
 import module10.Goods;
-import module10.Imports;
 
-public class ImportedBottleOfPerfume extends Goods implements Imports
+public class ImportedBottleOfPerfume extends Goods
 {
     public static String name = "Imported Bottle Of Perfume";
     public static double price = 47.50d;
