@@ -1,10 +1,8 @@
 package goods;
 
-import module10.Foods;
+import module10.Food;
 
-import javax.swing.*;
-
-public class Food extends Foods
+public class Foods extends Food
 {
     public static String nameBoxOfImportedChocolates = "Box Of Imported Chocolates";
     public static double priceBoxOfImportedChocolates = 11.25d;
@@ -15,7 +13,7 @@ public class Food extends Foods
     public static String nameImportedBoxOfChocolates = "Imported Box Of Chocolates";
     public static double priceImportedBoxOfChocolates = 10.00d;
 
-    public Food(double tax)
+    public Foods(double tax)
     {
         super(tax);
     }

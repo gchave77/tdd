@@ -1,8 +1,8 @@
 package goods;
 
-import module10.Goods;
+import module10.Good;
 
-public class Good extends Goods
+public class Goods extends Good
 {
     public static String nameMusicCD = "Music CD";
     public static double priceMusicCD = 14.99d;
@@ -16,7 +16,7 @@ public class Good extends Goods
     public static String nameImportedBottleOfPerfume = "Imported Bottle Of Perfume";
     public static double priceImportedBottleOfPerfume = 47.50d;
 
-    public Good(double tax)
+    public Goods(double tax)
     {
         super(tax);
     }

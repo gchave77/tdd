@@ -8,7 +8,7 @@ public class TaxCalculator
 
         if (isImport)
         {
-            totalItemTax = (tax + Imports.IMPORT_TAX) * price;
+            totalItemTax = (tax + Import.IMPORT_TAX) * price;
         } else {
             totalItemTax = (tax * price);
         }
