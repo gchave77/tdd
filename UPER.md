@@ -18,7 +18,7 @@ Write an application that prints out the receipt details for these shopping bask
 *
 <h2>2. Planning the Solution</h2>
 *
-Your focus should be on these elements of code quality:
+Focus should be on these elements of code quality:
 *
 Code easy to read and maintain code (i.e. Clean code)
 Use object-oriented design patterns (OOD)
@@ -31,12 +31,15 @@ Develop a strategy pattern
 *
 Create classes for each unique tax rule
 - Books
-- Food
+- Foods
 - Goods
 - Imports (Interface)
 - Medical Products
 *
-Create separate package for product classes
+Create separate package for product classes with unique tax rules
+*
+Calculate taxes based on tax rules for each item
+Print a receipt for each of 3 shopping carts
 *
 Configure JUnit5 Test package to test primary tax methods
 *
@@ -44,3 +47,4 @@ Configure JUnit5 Test package to test primary tax methods
 *
 Creating a strategy pattern based on requirements and unique tax rules, helped me use OOP effectively to write clean, expandable code. 
 *
+Need to work on inputing data from an outside source.
