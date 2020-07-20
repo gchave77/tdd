@@ -6,10 +6,11 @@ public class TaxCalculator
     {
         double totalItemTax;
 
-        if (isImport) {
+        if (isImport)
+        {
             totalItemTax = (tax + Imports.IMPORT_TAX) * price;
         } else {
-            totalItemTax = tax * price;
+            totalItemTax = (tax * price);
         }
         return Math.round(totalItemTax * 20.0) / 20.0;
     }
