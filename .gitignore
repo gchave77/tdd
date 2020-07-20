@@ -2,4 +2,5 @@
 *.jar
 *.war
 *.class
-tdd.iml
+*.xml
+*.iml
