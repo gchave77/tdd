@@ -25,14 +25,14 @@ class PurchasesTest
     @org.junit.jupiter.api.Test
     void outputOne1c()
     {
-        double purchaseTax1c = TaxCalculator.calcTax(Food.tax, ChocolateBar.price, ChocolateBar.isImport);
+        double purchaseTax1c = TaxCalculator.calcTax(Foods.tax, ChocolateBar.price, ChocolateBar.isImport);
         assertEquals(0.0, purchaseTax1c);
     }
 
     @org.junit.jupiter.api.Test
     void outputTwo2a()
     {
-        double purchaseTax2a = TaxCalculator.calcTax(Food.tax, ImportedBoxOfChocolates.price, ImportedBoxOfChocolates.isImport);
+        double purchaseTax2a = TaxCalculator.calcTax(Foods.tax, ImportedBoxOfChocolates.price, ImportedBoxOfChocolates.isImport);
         assertEquals(0.50, purchaseTax2a);
     }
 
@@ -67,7 +67,7 @@ class PurchasesTest
     @org.junit.jupiter.api.Test
     void outputThree3d()
     {
-        double purchaseTax3d = TaxCalculator.calcTax(Food.tax, BoxOfImportedChocolates.price, BoxOfImportedChocolates.isImport);
+        double purchaseTax3d = TaxCalculator.calcTax(Foods.tax, BoxOfImportedChocolates.price, BoxOfImportedChocolates.isImport);
         assertEquals(0.60, purchaseTax3d);
     }
 

@@ -1,8 +1,8 @@
 package goods;
 
-import module10.Food;
+import module10.Foods;
 
-public class BoxOfImportedChocolates extends Food
+public class BoxOfImportedChocolates extends Foods
 {
     public static String name = "Box Of Imported Chocolates";
     public static double price = 11.25d;
