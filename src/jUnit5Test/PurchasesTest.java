@@ -32,42 +32,42 @@ class PurchasesTest
     @org.junit.jupiter.api.Test
     void outputTwo2a()
     {
-        double purchaseTax2a = TaxCalculator.calcTax(Food.tax, ImportedBoxOfChocolates1000.price, ImportedBoxOfChocolates1000.isImport);
+        double purchaseTax2a = TaxCalculator.calcTax(Food.tax, ImportedBoxOfChocolates.price, ImportedBoxOfChocolates.isImport);
         assertEquals(0.50, purchaseTax2a);
     }
 
     @org.junit.jupiter.api.Test
     void outputTwo2b()
     {
-        double purchaseTax2b = TaxCalculator.calcTax(Goods.tax, ImportedBottleOfPerfume4750.price, ImportedBottleOfPerfume4750.isImport);
+        double purchaseTax2b = TaxCalculator.calcTax(Goods.tax, ImportedBottleOfPerfume.price, ImportedBottleOfPerfume.isImport);
         assertEquals(7.15, purchaseTax2b);
     }
 
     @org.junit.jupiter.api.Test
     void outputThree3a()
     {
-        double purchaseTax3a = TaxCalculator.calcTax(Goods.tax, ImportedBottleOfPerfume2799.price, ImportedBottleOfPerfume2799.isImport);
+        double purchaseTax3a = TaxCalculator.calcTax(Goods.tax, BottleOfImportedPerfume.price, BottleOfImportedPerfume.isImport);
         assertEquals(4.20, purchaseTax3a);
     }
 
     @org.junit.jupiter.api.Test
     void outputThree3b()
     {
-        double purchaseTax3b = TaxCalculator.calcTax(Goods.tax, BottleOfPerfume1899.price, BottleOfPerfume1899.isImport);
+        double purchaseTax3b = TaxCalculator.calcTax(Goods.tax, BottleOfPerfume.price, BottleOfPerfume.isImport);
         assertEquals(1.90, purchaseTax3b);
     }
 
     @org.junit.jupiter.api.Test
     void outputThree3c()
     {
-        double purchaseTax3c = TaxCalculator.calcTax(MedicalProducts.tax, PacketOfHeadachePills975.price, PacketOfHeadachePills975.isImport);
+        double purchaseTax3c = TaxCalculator.calcTax(MedicalProducts.tax, PacketOfHeadachePills.price, PacketOfHeadachePills.isImport);
         assertEquals(0.0, purchaseTax3c);
     }
 
     @org.junit.jupiter.api.Test
     void outputThree3d()
     {
-        double purchaseTax3d = TaxCalculator.calcTax(Food.tax, BoxOfImportedChocolates1125.price, BoxOfImportedChocolates1125.isImport);
+        double purchaseTax3d = TaxCalculator.calcTax(Food.tax, BoxOfImportedChocolates.price, BoxOfImportedChocolates.isImport);
         assertEquals(0.60, purchaseTax3d);
     }
 
