@@ -12,7 +12,7 @@ public class TaxCalculator
         } else {
             totalItemTax = (tax * price);
         }
-        return Math.round(totalItemTax * 20.0) / 20.0;
+        return Math.ceil(totalItemTax * 20.0) / 20.0;
     }
 
 }
